@@ -1,0 +1,34 @@
+
+/* Creating the table movies with necessary attributes*/
+create table movies(
+ movie_name varchar(50) not null,
+ lead_actor varchar(25) ,
+ lead_actress varchar(25),
+ year_of_release number(4) not null,
+ director_name varchar(25) not null,
+ primary key (movie_name)
+);
+
+
+
+/*Inserting the data into the table*/
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Memento','Guy Pearce','Carrie-Anne Moss',2000,'Christopher Nolan');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('A Beautiful Mind','Russell Crowe','Jennifer Connelly',2001,'Ron Howard');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('The Man Who Knew Infinity','Dev Patel','Devika Bhise',2015,'Matt Brown');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('The Theory of Everything','Eddie Redmayne','Felicity Jones',2014,'James Marsh');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('The Imitation Game','Benedict Cumberbatch','Keira Knightley',2014,'Morten Tyldum');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Iron Man 2','Robert Downey Jr.','Scarlett Johansson',2010,'Jon Favreau');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Kung Fu Hustle','Stephen Chow','Qiu Yuen',2004,'Stephen Chow');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Mission Mangal','Akshay Kumar','Vidya Balan',2019,'Jagan Shakti');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Interstellar','Matthew McConaughey','Anne Hathaway',2014,'Christopher Nolan');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Doctor Strange','Benedict Cumberbatch','Tilda Swinton',2016,'Scott Derrickson');
+Insert into movies(movie_name,lead_actor,lead_actress,year_of_release,director_name) values('Lucy','Benedict Cumberbatch','Morgan Freeman',2014,'Luc Besson');
+
+
+
+/*query to select all data from movies table*/
+select * from movies;
+
+
+/*query to select all data from movies table having lead_actor as "Benedict Cumberbatch"*/
+select * from movies where lead_actor='Benedict Cumberbatch';
